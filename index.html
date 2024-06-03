@@ -5,15 +5,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-    <title>Andrei-Sebastian Ciolacu | Web Developer | Software Developer | Currently based in Hengelo, Netherlands</title>
+    <title></title>
 
     <meta name="description" content="Hello world!" />
     <meta name="keywords" content="Andrei-Sebastian Ciolacu, Web Developer, C++, Java, Python, PHP, Cloud, PHP, SQL, Databases, Web Designer, Front-end, Back-end, Full-Stack, Web Applications, React, Angular, TBA" /> <!--ADD MORE-->
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 
 <body>
-    <p> Hello, website is under development</p>
+    <samp style="margin-left:50%">Hello! I'm Andrei, nice to meet you!</samp>
+    <hr>
+
+    <div class="text-success">
+        <hr>
+    </div>
+
+    <hr class="border border-danger border-2 opacity-75">
+    <hr class="border border-primary border-3 opacity-75">
 </body>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    let msg = " | Web Developer | Software Developer | Currently based in Hengelo, Netherlands |";
+    msg = "| Andrei-Sebastian Ciolacu |" + msg + " | Andrei-Sebastian Ciolacu |" + msg; // Extend the message for smooth looping
+    let position = 0;
+    const scrollSpeed = 5; // Smaller values for slower, smoother scrolling
+    const fps = 60; // Target frames per second
+    const interval = 1000 / fps;
+
+    function scrollTitle() {
+        // Calculate current position with fractional support
+        const length = msg.length;
+        const currentPosition = Math.floor(position);
+        const nextChar = msg[(currentPosition + 1) % length];
+        const nextPosition = position % 1;
+
+        // Update title with smooth transition between characters
+        document.title = msg.substring(currentPosition, length) + msg.substring(0, currentPosition);
+
+        // Increment position
+        position += scrollSpeed / fps;
+        if (position >= length) position = 0;
+
+        // Schedule next frame
+        setTimeout(() => requestAnimationFrame(scrollTitle), interval/fps);
+    }
+
+    scrollTitle(); // Start the scrolling
+
+
+
+</script>
 
 </html>

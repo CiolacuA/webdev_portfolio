@@ -1,3 +1,21 @@
 body{
-    background-color: red;
+    margin: 0 auto;
+    padding: 15px 15px;
+    background-color: wheat;
+}
+
+@keyframes scrollTitle {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.scrolling-title {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollTitle linear infinite;
 }
