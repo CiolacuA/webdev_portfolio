@@ -1,21 +1,21 @@
 body{
     margin: 0 auto;
-    padding: 15px 15px;
+    padding: 2% 2%;
     background-color: wheat;
 }
 
-@keyframes scrollTitle {
-    from {
-        transform: translateX(0%);
-    }
 
-    to {
-        transform: translateX(-100%);
-    }
+#messageContainer {
+    font-family: Consolas !important;
+    font-size: 1rem;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
 }
 
-.scrolling-title {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scrollTitle linear infinite;
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
 }
