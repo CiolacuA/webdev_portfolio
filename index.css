@@ -7,9 +7,9 @@ body{
 
 #messageContainer {
     font-family: Consolas !important;
-    font-size: 1rem;
-    text-align: center;
-    transition: opacity 1s ease-in-out;
+    font-size: 1rem !important;
+    text-align: center !important;
+    transition: opacity 1s ease-in-out !important;
 }
 
 .visible {
