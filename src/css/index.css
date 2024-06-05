@@ -24,4 +24,5 @@ html, body{
     padding: 2%;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 0 0 5% 95%;
 }
