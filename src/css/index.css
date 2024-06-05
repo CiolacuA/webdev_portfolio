@@ -1,0 +1,27 @@
+html, body{
+    margin: 0 auto;
+    background-color: rgb(26, 24, 24) !important;
+}
+
+
+#messageContainer {
+    font-family: Consolas !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+    transition: opacity 1s ease-in-out !important;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.welcome-wrapper{
+    background-color: aliceblue;
+    padding: 2%;
+    width: 100%;
+    box-sizing: border-box;
+}
